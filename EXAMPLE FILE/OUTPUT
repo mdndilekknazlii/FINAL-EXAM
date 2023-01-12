@@ -10,16 +10,16 @@
 [1] "For Experiment 1 the Temperature is : 30 and the result is 200"
 [1] "For Experiment 1 the Temperature is : 35 and the result is 100"
 > experiment2<- matrix(c(25,30))
-> experiment2<- matrix(c(25,30,35,250,150,50), nrow = 2, ncol = 3 , byrow = TRUE)
+> experiment2<- matrix(c(25,30,35,235,150,70), nrow = 2, ncol = 3 , byrow = TRUE)
 > print(experiment2)
      [,1] [,2] [,3]
 [1,]   25   30   35
-[2,]  250  150   50
+[2,]  235  150   70
 > for(r in 1:ncol(experiment2))
 +   print(paste("For Experiment 2 the Temperature is :", experiment2[1,r] , "and the result is" , experiment2[2,r]))
-[1] "For Experiment 2 the Temperature is : 25 and the result is 250"
+[1] "For Experiment 2 the Temperature is : 25 and the result is 230"
 [1] "For Experiment 2 the Temperature is : 30 and the result is 150"
-[1] "For Experiment 2 the Temperature is : 35 and the result is 50"
+[1] "For Experiment 2 the Temperature is : 35 and the result is 70"
 > result1<- experiment1[2,1] - experiment2[2,1]
 > result2<- experiment1[2,2] - experiment2[2,2]
 > result3<- experiment1[2,3] - experiment2[2,3]
