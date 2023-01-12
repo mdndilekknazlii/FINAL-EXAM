@@ -9,3 +9,12 @@ experiment2<- matrix(c(25,30,35,250,150,50), nrow = 2, ncol = 3 , byrow = TRUE)
 print(experiment2)
 for(r in 1:ncol(experiment2))
   print(paste("For Experiment 2 the Temperature is :", experiment2[1,r] , "and the result is" , experiment2[2,r]))
+result1<- experiment1[2,1] - experiment2[2,1]
+result2<- experiment1[2,2] - experiment2[2,2]
+result3<- experiment1[2,3] - experiment2[2,3]
+cat("The differences between your result at 25 degree is:")
+print(result1)
+cat("The differences between your result at 30 degree is:")
+print(result2)
+cat("The differences between your result at 35 degree is:")
+print(result3)
